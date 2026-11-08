@@ -106,9 +106,10 @@ For each job card detected on the page:
    * **Portal Apply**: Skip external redirect jobs if user requests in-portal applies only.
 
 ### Phase 4: Application & Questionnaire Autofill
-1. **Multi-Job Selection Rule (Max 5 Jobs per Batch)**:
-   * Naukri portal enforces a hard limit: **maximum 5 jobs can be selected and applied in one batch** (`"You can select upto 5 jobs to apply"`).
-   * The agent strictly checks at most 5 eligible jobs at a time and clicks the `Apply X Jobs` button.
+1. **Multi-Job Selection Rule (Max 5 Jobs per Batch - UI Selection Limit Only)**:
+   * **No Overall Application Cap**: We have no limit on total applications; apply continuously across available opportunities.
+   * **Portal Selection Limit**: The 5-job cap is purely a Naukri UI multi-select restriction (`"You can select upto 5 jobs to apply"`).
+   * **Batch Cycling**: The agent selects up to 5 eligible matching jobs per batch, applies, logs them, and continues to the next batch of 5 jobs.
 2. **Simple 1-Click Apply**:
    * If the application completes immediately with resume on file: Record as `SUCCESS`.
 3. **Chatbot / Modal Questionnaire (NEVER SKIP ANY QUESTION)**:

@@ -71,10 +71,10 @@ This skill provides step-by-step procedures for the agent to discover, filter, a
    * Verify title matches target keywords (`React`, `Redux`, `Front End`, `Frontend`, `Senior Software Engineer`).
    * Verify experience requirement matches candidate profile (minimum 5 years).
    * Check if already applied (status badge or existing entry in `applied_jobs.json`).
-3. **Batch Selection Rule (Max 5 Jobs)**:
-   * Naukri multi-job selection allows applying to a **maximum of 5 jobs per batch** (`You can select upto 5 jobs to apply`).
-   * Filter and check up to 5 eligible matching jobs at a time (`input.tuple-check-input` / `.tuple-check-box`).
-   * Never select more than 5 jobs in a single multi-apply batch.
+3. **Batch Selection Rule (Max 5 Jobs at a Time - Portal UI Selection Limit Only)**:
+   * **No Overall Application Cap**: There is no artificial application limit in our workflow.
+   * **Naukri Portal Selection Constraint**: The 5-job restriction is strictly Naukri's front-end UI multi-select cap (`"You can select upto 5 jobs to apply"`).
+   * **Continuous Multi-Batch Execution**: Select up to 5 eligible matching jobs at a time, click `"Apply 5 Jobs"`, complete any screening questions, record applied entries, and immediately repeat the loop for subsequent 5-job batches (or open individual job pages to apply).
 
 ### Step 4: Execute Application & Questionnaire Autofill
 1. Click the **"Apply X Jobs"** button (max 5 jobs) for multi-apply, or trigger individual **Apply** buttons.
