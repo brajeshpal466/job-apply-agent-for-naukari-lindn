@@ -1,0 +1,179 @@
+{
+  "personal": {
+    "name": "YOUR_FULL_NAME",
+    "email": "your_email@example.com",
+    "phone": "+91-XXXXXXXXXX",
+    "countryCode": "+91",
+    "mobileNumber": "XXXXXXXXXX",
+    "location": "Bengaluru, India",
+    "currentCity": "Bengaluru",
+    "preferredLocations": ["Bengaluru", "Hyderabad", "Pune", "Noida", "Gurugram", "Remote", "Hybrid"],
+    "linkedIn": "https://linkedin.com/in/your-profile",
+    "github": "https://github.com/your-username"
+  },
+  "jobPreferences": {
+    "mandatoryCoreSkills": [
+      "React",
+      "React.js",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "allowedBackendSkills": [
+      "Node.js",
+      "Express",
+      ".NET",
+      "C#",
+      ".NET Core",
+      "ASP.NET"
+    ],
+    "strictMatchingRule": "Apply ONLY to jobs that have React, TypeScript, or JavaScript as core requirements, with optional backend complements in Node.js, Express, or .NET/C#. STRICTLY EXCLUDE and DO NOT apply to any Java, J2EE, Spring, Spring Boot, or Java Full Stack roles.",
+    "strictExcludedTechnologies": [
+      "Java",
+      "J2EE",
+      "Spring Boot",
+      "Spring",
+      "Java Full Stack"
+    ],
+    "targetRoles": [
+      "React.js Developer",
+      "React Developer",
+      "Senior React Developer",
+      "Frontend Developer",
+      "Senior Frontend Engineer",
+      "Senior Software Engineer (React / Frontend / Full Stack)"
+    ],
+    "keywords": [
+      "React.js",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Redux",
+      "Front End Developer",
+      "Senior Software Engineer",
+      "Next.js",
+      "Micro Frontend"
+    ],
+    "minExperienceYears": 5,
+    "totalExperienceYears": 5.2,
+    "availability": "Immediate Joiner",
+    "noticePeriodDays": 0,
+    "noticePeriodText": "Immediate Joiner (Serving Notice / Ready to join immediately)",
+    "freshnessPreference": "Strictly within 1 week or sooner (0-7 days only)",
+    "freshnessDaysMax": 7,
+    "strictFreshnessOnly": true,
+    "prioritizeEarlyApplicants": true,
+    "employmentType": ["Full Time", "Permanent"],
+    "workMode": ["Work from office", "Hybrid", "Remote"],
+    "currentCTC": "27 LPA",
+    "expectedCTC": "30 LPA (Flexible 27 - 30+ LPA based on role budget)",
+    "faceToFaceInterview": "Yes (Available for in-person / F2F rounds in Bengaluru)"
+  },
+  "summary": "Software Engineer with 5+ years of experience building scalable enterprise and SaaS applications, specializing in React.js, Next.js, TypeScript, React Native, and Micro Frontend (MFE) architecture. Experienced in developing modular frontend applications, reusable UI components, and REST API integrations. Working knowledge of C#/.NET Core and Microsoft Azure infrastructure, including Azure DevOps CI/CD pipelines.",
+  "skills": {
+    "core": [
+      "React.js",
+      "React",
+      "Redux",
+      "Redux Toolkit",
+      "Redux Thunk",
+      "Redux Saga",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Micro Frontends (MFE)",
+      "Next.js",
+      "HTML5",
+      "CSS3"
+    ],
+    "stylingAndUI": [
+      "Material UI (MUI)",
+      "Chakra UI",
+      "Storybook",
+      "Tailwind CSS",
+      "Responsive Design"
+    ],
+    "backendAndAPIs": [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "C#",
+      "ASP.NET Core",
+      ".NET Core",
+      "MongoDB",
+      "SQL"
+    ],
+    "cloudAndDevOps": [
+      "Microsoft Azure",
+      "Azure Functions",
+      "Azure DevOps",
+      "AWS (Lambda, S3, CloudFront)",
+      "Docker",
+      "Kubernetes",
+      "Git",
+      "CI/CD"
+    ]
+  },
+  "workExperience": [
+    {
+      "company": "CURRENT_COMPANY_NAME",
+      "title": "Senior Software Engineer",
+      "employmentType": "Full Time",
+      "location": "Bengaluru, India",
+      "startDate": "2026-04",
+      "endDate": null,
+      "isCurrent": true,
+      "description": "Developed modular enterprise applications using React.js, Next.js, and TypeScript within a Micro Frontend (MFE) architecture.",
+      "techStack": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "MFE",
+        "C#",
+        ".NET Core",
+        "Azure"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech Computer Science",
+      "institution": "UNIVERSITY_NAME",
+      "location": "LOCATION_NAME",
+      "startYear": 2018,
+      "endYear": 2021
+    }
+  ],
+  "standardApplicationAnswers": {
+    "currentCTC": "27 LPA",
+    "currentCTCNumber": 27,
+    "currentCTCAnnualINR": 2700000,
+    "expectedCTC": "30 LPA",
+    "expectedCTCNumber": 30,
+    "expectedCTCAnnualINR": 3000000,
+    "expectedCTCRule": "Align with employer budget across 27, 28, 29, 30+ LPA; default 30 LPA",
+    "faceToFaceInterview": "Yes",
+    "availableForFaceToFace": "Yes",
+    "inPersonInterviewAvailable": "Yes",
+    "noticePeriod": "Immediate / 0 days",
+    "noticePeriodDropdown": "Immediate Joiner",
+    "servingNoticePeriod": "Yes",
+    "lastWorkingDay": "Immediate",
+    "currentLocation": "Bengaluru",
+    "willingToRelocate": "Yes",
+    "preferredWorkLocation": "Bengaluru, Hyderabad, Pune, Noida, Gurugram",
+    "totalExperienceYears": "5",
+    "relevantExperienceReact": "5",
+    "relevantExperienceJavaScript": "5",
+    "relevantExperienceTypeScript": "5",
+    "relevantExperienceRedux": "5",
+    "relevantExperienceFrontend": "5",
+    "relevantExperienceOther": "3",
+    "questionnaireExperienceRule": {
+      "react": 5,
+      "javascript": 5,
+      "typescript": 5,
+      "others": 3
+    },
+    "highestQualification": "B.Tech / B.E. in Computer Science",
+    "gender": "Male"
+  }
+}
