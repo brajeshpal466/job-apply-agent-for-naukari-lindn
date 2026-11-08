@@ -237,69 +237,7 @@ The agent will:
 Apply on both LinkedIn and Naukri until 100 jobs are reached
 ```
 
----
 
-## Step 6: Git Hygiene — What to Push & Data Masking
-
-> [!CAUTION]
-> **NEVER push your personal phone number, email, CTC numbers, or actual resumes to GitHub.**
-
-### What MUST be committed to Git:
-
-* `README.md`
-* `.gitignore`
-* `.agents/skills/naukri-job-applier/SKILL.md`
-* `.agents/skills/naukri-job-applier/references/job_application_spec.md`
-* `.agents/skills/naukri-job-applier/references/candidate_profile.template.json` *(masked)*
-* `.agents/skills/linkedin-job-applier/SKILL.md`
-* `.agents/skills/linkedin-job-applier/references/linkedin_spec.md`
-
-### What MUST NEVER be committed to Git (kept local in `.gitignore`):
-
-| File | Why It Is Ignored |
-| :--- | :--- |
-| `candidate_profile.json` | Contains actual personal contact details, email, and phone. |
-| `*.pdf` / `resume.pdf` | Contains actual resume and confidential work history. |
-| `applied_jobs.json` | Contains private application records and submission IDs. |
-| `.env*` | Contains any local tokens or private environment variables. |
-
----
-
-## Pre-Push Masking Checklist
-
-Before running `git add` and `git commit`, run this verification script to guarantee no sensitive data is staged:
-
-```bash
-# 1. Verify git ignores private files
-git status --ignored
-
-# 2. Confirm candidate_profile.json and resumes are NOT staged
-git status
-
-# 3. Quick sanity check: Ensure template has masked values
-grep -E "YOUR_FULL_NAME|your_email@example.com" \
-  .agents/skills/naukri-job-applier/references/candidate_profile.template.json
-```
-
-### Initializing Git & Pushing for the First Time:
-
-```bash
-# Initialize repository (if not already initialized)
-git init
-git branch -M main
-
-# Add only non-sensitive files
-git add .gitignore README.md .agents/
-
-# Commit
-git commit -m "feat: setup autonomous job application skills with masked template"
-
-# Add remote and push
-git remote add origin <YOUR_GITHUB_REPO_URL>
-git push -u origin main
-```
-
----
 
 ## 🛡️ License & Compliance
 
