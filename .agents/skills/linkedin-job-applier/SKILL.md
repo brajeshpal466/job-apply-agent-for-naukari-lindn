@@ -15,7 +15,7 @@ This skill provides comprehensive instructions for discovering, filtering, and a
 ## References & Candidate Data
 
 * **Candidate Profile**: `../naukri-job-applier/references/candidate_profile.json`
-* **Resume File**: `/Users/brajeshkumar/Documents/projects/job_search/brajesh_resume.pdf`
+* **Resume File**: `resume.pdf` (in project root)
 * **Audit Tracking Database**: `applied_linkedin_jobs.json` and consolidated `applied_jobs.json`
 
 ## Target Criteria
@@ -69,7 +69,7 @@ This skill provides comprehensive instructions for discovering, filtering, and a
    * Click the **Easy Apply** button (`button.jobs-apply-button`).
 4. **Complete Modal Steps Without Skipping**:
    * **Contact Info Step**: Verify phone `+91-{{YOUR_PHONE}}` and email `{{YOUR_EMAIL}}`. Click "Next".
-   * **Resume Step**: Ensure latest resume (`brajesh_resume.pdf`) is selected. Click "Next".
+   * **Resume Step**: Ensure latest resume (`resume.pdf`) is selected. Click "Next".
    * **Screening Questions Step**:
      * Iterate over all questions (`input[type="text"]`, `input[type="number"]`, `select`, radio buttons).
      * React / JS / TS -> enter `5`.

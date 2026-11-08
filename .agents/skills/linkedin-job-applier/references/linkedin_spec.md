@@ -24,7 +24,7 @@
 * **Posting Freshness (STRICT)**: **Strictly within 1 week or sooner (0–7 days max / Past Week: `f_TPR=r604800` or Past 24 hours: `f_TPR=r86400`)**. Never apply to jobs older than 7 days.
 * **Target Quota**: Autonomous continuous loop until reaching **100 total applications** across Naukri and LinkedIn.
 * **Candidate Source of Truth**: `../../naukri-job-applier/references/candidate_profile.json`
-* **Resume File**: `/Users/brajeshkumar/Documents/projects/job_search/brajesh_resume.pdf`
+* **Resume File**: `resume.pdf` (in project root)
 * **Audit Tracking Database**: `applied_jobs.json`
 
 ---
@@ -75,7 +75,7 @@ All multi-step Easy Apply screening questions must be answered completely and dy
 ### Step 3: Easy Apply Form Execution
 1. Click the job card, then click **Easy Apply** (`button.jobs-apply-button`).
 2. **Contact Info**: Verify candidate phone (`+91-{{YOUR_PHONE}}`) and email (`{{YOUR_EMAIL}}`), click Next.
-3. **Resume Selection**: Ensure `brajesh_resume.pdf` (or latest uploaded resume) is selected, click Next.
+3. **Resume Selection**: Ensure `resume.pdf` (or latest uploaded resume) is selected, click Next.
 4. **Screening Questions**:
    * Autofill all text, numeric, dropdown, and radio inputs according to the rules in Section 2.
    * Never leave any question blank.

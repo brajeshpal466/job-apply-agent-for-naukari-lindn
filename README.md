@@ -111,21 +111,23 @@ To protect your personal data, the repository tracks a sanitized markdown templa
 
 ### 1. Sample Personal Details Reference Table
 
-You can refer to or copy directly from the sample Markdown document:
+You can refer to or copy directly from the sample Markdown document ([candidate_profile.sample.md](.agents/skills/naukri-job-applier/references/candidate_profile.sample.md)) or use this reference table for cross-checking:
 
-| Parameter | Sample / Placeholder | Notes |
-| :--- | :--- | :--- |
-| **Full Name** | `{{YOUR_FULL_NAME}}` | Your real name |
-| **Email Address** | `{{YOUR_EMAIL}}` | Recruiter contact email |
-| **Phone Number** | `+91-{{YOUR_PHONE}}` | Mobile number |
-| **Current Location** | `Bengaluru, India` | Default primary location |
-| **Current CTC** | `27 LPA` | Input numeric `27` |
-| **Expected CTC** | `27–30+ LPA` (default `30 LPA`) | Dynamic based on recruiter range |
-| **Notice Period** | `0 days` / `Immediate` | Immediate joiner status |
-| **Face-to-Face Interview** | `Yes` / `Available` | Always mark available for Bengaluru F2F |
-| **Core Skills** | `React`, `TypeScript`, `JavaScript` | Answer `5` years |
-| **Backend Skills** | `Node.js`, `Express`, `.NET Core` | Answer `3–5` years |
-| **Excluded Skills** | `Java`, `Spring Boot` | **Zero applications** (Skip completely) |
+| Parameter | Placeholder | Generic Sample Value | Notes / Description |
+| :--- | :--- | :--- | :--- |
+| **Full Name** | `{{YOUR_FULL_NAME}}` | `Jane Doe` | Candidate legal / display name |
+| **Email Address** | `{{YOUR_EMAIL}}` | `janedoe@example.com` | Primary application contact email |
+| **Phone Number** | `+91-{{YOUR_PHONE}}` | `+91-9876543210` | Contact phone / mobile number |
+| **Current Location** | `{{CURRENT_LOCATION}}` | `Bengaluru, India` | Current home / base city |
+| **Preferred Locations** | `{{PREFERRED_LOCATIONS}}` | `Bengaluru, Hyderabad, Pune, Remote` | Target job locations |
+| **Current CTC** | `{{CURRENT_CTC}}` | `20 LPA` (numeric `20`) | Current fixed package / CTC |
+| **Expected CTC** | `{{EXPECTED_CTC}}` | `25–30+ LPA` (default `28 LPA`) | Target package range matching job budget |
+| **Notice Period** | `{{NOTICE_PERIOD}}` | `Immediate / 0 days` | Notice period length |
+| **Serving Notice?** | `{{SERVING_NOTICE}}` | `Yes` | Currently serving notice period |
+| **Face-to-Face Interview** | `{{F2F_AVAILABLE}}` | `Yes / Available` | Willing to attend in-person rounds |
+| **Core Skills** | `React`, `TypeScript`, `JavaScript` | `5` (Years / Rating) | Core frontend technologies |
+| **Backend Skills** | `Node.js`, `Express`, `.NET Core` | `3` (Years / Rating) | Complementary backend stack |
+| **Excluded Technologies** | `Java`, `Spring Boot` | `0` (Zero applications) | Strict exclusion filter (Skip completely) |
 
 ### 2. Create your local profile from template
 
@@ -140,7 +142,7 @@ cp .agents/skills/naukri-job-applier/references/candidate_profile.template.json 
 Place your current resume PDF in the project root:
 
 ```bash
-cp /path/to/your_resume.pdf ./brajesh_resume.pdf
+cp /path/to/your_resume.pdf ./resume.pdf
 ```
 
 *(Note: `*.pdf` is included in `.gitignore` so your resume file is never accidentally committed).*
@@ -149,20 +151,20 @@ cp /path/to/your_resume.pdf ./brajesh_resume.pdf
 
 ## Step 4: Configure Preferences, Skills & CTC
 
-Verify that your `candidate_profile.json` and skills reflect your current job application rules:
+Verify that your `candidate_profile.json` and skills reflect your application rules:
 
 ### 1. Compensation (CTC) Rules
 
 ```json
-"currentCTC": "27 LPA",
-"currentCTCNumber": 27,
-"expectedCTC": "30 LPA",
-"expectedCTCNumber": 30,
-"expectedCTCRule": "Align with employer budget across 27, 28, 29, 30+ LPA; default 30 LPA"
+"currentCTC": "20 LPA",
+"currentCTCNumber": 20,
+"expectedCTC": "28 LPA",
+"expectedCTCNumber": 28,
+"expectedCTCRule": "Align with employer budget across candidate range (e.g. 25, 26, 27, 28, 29, 30+ LPA; default 28 LPA)"
 ```
 
-* When screening questionnaires ask for **Current CTC**: Inputs `27 LPA` (or numeric `27`).
-* When asked for **Expected CTC**: Matches the employer's budget between `27` and `30+` LPA (default `30 LPA` or `30`).
+* When screening questionnaires ask for **Current CTC**: Inputs your numeric Current CTC (e.g., `20`).
+* When asked for **Expected CTC**: Matches the employer's budget between your desired range (e.g., `25` and `30+` LPA; default `28 LPA` or `28`).
 
 ### 2. Interview Availability & Location
 
@@ -258,7 +260,7 @@ Apply on both LinkedIn and Naukri until 100 jobs are reached
 | File | Why It Is Ignored |
 | :--- | :--- |
 | `candidate_profile.json` | Contains actual personal contact details, email, and phone. |
-| `*.pdf` / `brajesh_resume.pdf` | Contains actual resume and confidential work history. |
+| `*.pdf` / `resume.pdf` | Contains actual resume and confidential work history. |
 | `applied_jobs.json` | Contains private application records and submission IDs. |
 | `.env*` | Contains any local tokens or private environment variables. |
 

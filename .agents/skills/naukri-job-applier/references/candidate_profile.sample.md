@@ -25,8 +25,8 @@
 
 | Question / Field | Standard Answer | Notes / Strategy |
 | :--- | :--- | :--- |
-| **Current CTC / Package** | **`27 LPA`** (or `27`) | Enter your fixed/current compensation. |
-| **Expected CTC / Package** | **`27–30+ LPA`** (or `30`) | Dynamically match employer budget (e.g. 27, 28, 29, 30+ LPA; default `30 LPA`). |
+| **Current CTC / Package** | **`20 LPA`** (or `20`) | Enter your fixed/current compensation. |
+| **Expected CTC / Package** | **`25–30+ LPA`** (or `28`) | Dynamically match employer budget (e.g. 25, 26, 27, 28, 29, 30+ LPA; default `28 LPA`). |
 | **Notice Period** | **`0 days`** / **`Immediate`** | Select `Immediate Joiner` / `0 days`. |
 | **Currently Serving Notice?** | **`Yes`** | Confirms immediate or rapid availability. |
 | **Face-to-Face / In-Person Interview** | **`Yes`** / **`Available`** | Always answer Yes for in-person / F2F rounds in Bengaluru. |
