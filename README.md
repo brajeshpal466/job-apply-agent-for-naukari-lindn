@@ -13,8 +13,7 @@ An autonomous agentic pair-programming workflow powered by **Antigravity** and *
 5. [Step 3: Setup Candidate Profile & Private Data](#step-3-setup-candidate-profile--private-data)
 6. [Step 4: Configure Preferences, Skills & CTC](#step-4-configure-preferences-skills--ctc)
 7. [Step 5: How to Run Applications](#step-5-how-to-run-applications)
-8. [Step 6: Git Hygiene — What to Push & Data Masking](#step-6-git-hygiene--what-to-push--data-masking)
-9. [Pre-Push Masking Checklist](#pre-push-masking-checklist)
+
 
 ---
 
