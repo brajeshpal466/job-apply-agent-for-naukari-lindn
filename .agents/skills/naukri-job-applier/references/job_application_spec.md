@@ -122,7 +122,7 @@ When clicking **Apply** on Naukri:
      * **Face to Face / In-Person Interview**: `Yes` / `Available`.
      * **Current CTC**: `27 LPA` (or `27`).
      * **Expected CTC**: Match job budget (`27`, `28`, `29`, `30+` LPA; default `30 LPA` or `30`).
-     * **Current Company**: `PwC`.
+     * **Current Company**: `{{CURRENT_COMPANY}}`.
      * **Current Title**: `Senior Software Engineer`.
 3. Submit the form and verify the confirmation toast/modal ("Successfully applied to...").
 
@@ -139,3 +139,11 @@ When clicking **Apply** on Naukri:
    }
    ```
 2. Display a structured summary table to the user with applied jobs and any questionnaire answers filled.
+
+---
+
+## 5. Safety & Control Gates
+* **User Confirmation**: The agent asks or provides an execution summary before bulk applying.
+* **Daily Rate Limiting**: Limit continuous applications to prevent platform throttling (e.g. 15-25 applications per batch with random human-like pacing).
+* **Company Exclusions**: Optional blacklist in config (e.g. current employer if confidential).
+

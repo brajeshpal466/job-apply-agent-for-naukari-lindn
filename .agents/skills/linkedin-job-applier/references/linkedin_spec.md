@@ -93,6 +93,10 @@ Append each successful application to `applied_jobs.json`:
   "company": "<company_name>",
   "location": "<job_location>",
   "appliedAt": "<timestamp>",
-  "status": "APPLIED"
+  "status": "APPLIED",
+  "platform": "LinkedIn",
+  "url": "https://www.linkedin.com/jobs/view/<job_id>/"
 }
 ```
+Continue loop across locations and keywords until reaching the 100-job goal.
+

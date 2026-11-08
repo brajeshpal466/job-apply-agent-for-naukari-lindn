@@ -14,7 +14,6 @@ This skill provides step-by-step procedures for the agent to discover, filter, a
 ## References & Data Assets
 
 * **Candidate Profile Data**: [candidate_profile.json](./references/candidate_profile.json) (All resume details, skills, experience, and questionnaire answers).
-* **Sample Profile Template**: [candidate_profile.sample.md](./references/candidate_profile.sample.md) (Sanitized sample markdown format).
 * **Detailed Execution Specification**: [job_application_spec.md](./references/job_application_spec.md) (Full spec kit rules, safety gates, and flow charts).
 * **Applied Jobs Database**: `applied_jobs.json` in the workspace root.
 
@@ -104,3 +103,4 @@ For each candidate job:
    }
    ```
 2. Present a clean summary to the user with applied roles and any questions that required user review.
+

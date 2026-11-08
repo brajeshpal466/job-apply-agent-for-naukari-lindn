@@ -15,7 +15,6 @@ This skill provides comprehensive instructions for discovering, filtering, and a
 ## References & Candidate Data
 
 * **Candidate Profile**: `../naukri-job-applier/references/candidate_profile.json`
-* **Sample Profile Template**: `../naukri-job-applier/references/candidate_profile.sample.md`
 * **Resume File**: `/Users/brajeshkumar/Documents/projects/job_search/brajesh_resume.pdf`
 * **Audit Tracking Database**: `applied_linkedin_jobs.json` and consolidated `applied_jobs.json`
 
@@ -87,3 +86,4 @@ This skill provides comprehensive instructions for discovering, filtering, and a
 5. **Record in Applied Database**:
    * Log job ID, title, company, location, and timestamp into `applied_linkedin_jobs.json` and `applied_jobs.json`.
    * Continue loop until 100 total jobs are reached.
+

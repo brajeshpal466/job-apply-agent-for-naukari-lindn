@@ -52,8 +52,14 @@ flowchart TD
 Clone or pull the repository to your local working directory:
 
 ```bash
-git clone https://github.com/brajeshpal466/job-apply-agent-for-naukari-lindn.git
-cd job-apply-agent-for-naukari-lindn
+git clone <YOUR_REPO_URL> job_search
+cd job_search
+```
+
+If you are pulling updates on an existing machine:
+
+```bash
+git pull origin main
 ```
 
 ---
@@ -201,6 +207,14 @@ Tag the skill or type:
 ```
 *(Or simply: `"apply on naukri"`)*
 
+The agent will:
+1. Scan Recommended Jobs (`Handpicked`, `Preferences`, `Searches`).
+2. Filter for React/TS/JS roles posted within 7 days.
+3. Automatically skip all Java roles.
+4. Check multi-apply boxes and submit.
+5. Autofill screening questions in the chatbot drawer.
+6. Log all applications to `applied_jobs.json`.
+
 ### Apply on LinkedIn (Easy Apply)
 
 Tag the skill or type:
@@ -208,6 +222,13 @@ Tag the skill or type:
 @linkedin-job-applier/SKILL.md apply
 ```
 *(Or simply: `"apply on linkedin"`)*
+
+The agent will:
+1. Search Easy Apply jobs across target cities (`Bengaluru`, `Hyderabad`, `Pune`, `Noida`, `Gurugram`).
+2. Open matching job cards and launch the Easy Apply modal.
+3. Fill contact information and verify resume.
+4. Answer all screening questions dynamically without skipping.
+5. Submit the application and record to `applied_jobs.json`.
 
 ### Apply on Both
 
@@ -228,7 +249,6 @@ Apply on both LinkedIn and Naukri until 100 jobs are reached
 * `.gitignore`
 * `.agents/skills/naukri-job-applier/SKILL.md`
 * `.agents/skills/naukri-job-applier/references/job_application_spec.md`
-* `.agents/skills/naukri-job-applier/references/candidate_profile.sample.md` *(masked)*
 * `.agents/skills/naukri-job-applier/references/candidate_profile.template.json` *(masked)*
 * `.agents/skills/linkedin-job-applier/SKILL.md`
 * `.agents/skills/linkedin-job-applier/references/linkedin_spec.md`
@@ -260,8 +280,27 @@ grep -E "YOUR_FULL_NAME|your_email@example.com" \
   .agents/skills/naukri-job-applier/references/candidate_profile.template.json
 ```
 
+### Initializing Git & Pushing for the First Time:
+
+```bash
+# Initialize repository (if not already initialized)
+git init
+git branch -M main
+
+# Add only non-sensitive files
+git add .gitignore README.md .agents/
+
+# Commit
+git commit -m "feat: setup autonomous job application skills with masked template"
+
+# Add remote and push
+git remote add origin <YOUR_GITHUB_REPO_URL>
+git push -u origin main
+```
+
 ---
 
 ## 🛡️ License & Compliance
 
 This tool is designed for personal automation with human supervision. Always ensure compliance with the terms of service of the respective platforms.
+
