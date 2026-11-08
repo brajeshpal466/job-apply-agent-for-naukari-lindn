@@ -59,7 +59,35 @@ function extractJobCards() {
   return results;
 }
 
+function selectMaxBatchJobs(maxJobs = 5) {
+  const cards = Array.from(document.querySelectorAll('.cust-job-tuple, .srp-jobtuple-wrapper, .jobTuple'));
+  let selectedCount = 0;
+  const selected = [];
+
+  cards.forEach((card, idx) => {
+    const chk = card.querySelector('input[type="checkbox"]');
+    const title = card.querySelector('a.title, .title')?.textContent.trim().toLowerCase() || '';
+    const text = card.innerText.toLowerCase();
+
+    // Strict exclusion: Java, J2EE, Spring
+    const isJava = text.includes('java') || text.includes('spring') || title.includes('java');
+    const isEligible = !isJava && TARGET_ROLES.some(r => title.includes(r) || text.includes(r));
+
+    if (chk) {
+      if (isEligible && selectedCount < maxJobs) {
+        if (!chk.checked) chk.click();
+        selectedCount++;
+        selected.push({ index: idx, title: card.querySelector('.title')?.textContent.trim() });
+      } else {
+        if (chk.checked) chk.click(); // uncheck ineligible or excess jobs
+      }
+    }
+  });
+
+  return { selectedCount, selected };
+}
+
 if (typeof module !== 'undefined') {
-  module.exports = { TARGET_ROLES, CANDIDATE_PROFILE, extractJobCards };
+  module.exports = { TARGET_ROLES, CANDIDATE_PROFILE, extractJobCards, selectMaxBatchJobs };
 }
 

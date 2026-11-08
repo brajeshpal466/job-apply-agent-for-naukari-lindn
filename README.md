@@ -213,7 +213,7 @@ The agent will:
 1. Scan Recommended Jobs (`Handpicked`, `Preferences`, `Searches`).
 2. Filter for React/TS/JS roles posted within 7 days.
 3. Automatically skip all Java roles.
-4. Check multi-apply boxes and submit.
+4. Check multi-apply boxes (maximum 5 jobs per batch as enforced by Naukri) and submit.
 5. Autofill screening questions in the chatbot drawer.
 6. Log all applications to `applied_jobs.json`.
 

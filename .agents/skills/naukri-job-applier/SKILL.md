@@ -71,11 +71,13 @@ This skill provides step-by-step procedures for the agent to discover, filter, a
    * Verify title matches target keywords (`React`, `Redux`, `Front End`, `Frontend`, `Senior Software Engineer`).
    * Verify experience requirement matches candidate profile (minimum 5 years).
    * Check if already applied (status badge or existing entry in `applied_jobs.json`).
-3. Collect candidate jobs for the current batch.
+3. **Batch Selection Rule (Max 5 Jobs)**:
+   * Naukri multi-job selection allows applying to a **maximum of 5 jobs per batch** (`You can select upto 5 jobs to apply`).
+   * Filter and check up to 5 eligible matching jobs at a time (`input.tuple-check-input` / `.tuple-check-box`).
+   * Never select more than 5 jobs in a single multi-apply batch.
 
 ### Step 4: Execute Application & Questionnaire Autofill
-For each candidate job:
-1. Trigger the **Apply** button.
+1. Click the **"Apply X Jobs"** button (max 5 jobs) for multi-apply, or trigger individual **Apply** buttons.
 2. Monitor for screening questions / chatbot modal (DO NOT SKIP ANY QUESTIONS):
    * When prompted for **Notice Period**: Fill or select `Immediate` / `0 days` / `Serving Notice Period`.
    * When prompted for **Total Experience**: Enter `5` (or `5.2`).

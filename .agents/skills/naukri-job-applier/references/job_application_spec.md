@@ -106,10 +106,12 @@ For each job card detected on the page:
    * **Portal Apply**: Skip external redirect jobs if user requests in-portal applies only.
 
 ### Phase 4: Application & Questionnaire Autofill
-When clicking **Apply** on Naukri:
-1. **Simple 1-Click Apply**:
+1. **Multi-Job Selection Rule (Max 5 Jobs per Batch)**:
+   * Naukri portal enforces a hard limit: **maximum 5 jobs can be selected and applied in one batch** (`"You can select upto 5 jobs to apply"`).
+   * The agent strictly checks at most 5 eligible jobs at a time and clicks the `Apply X Jobs` button.
+2. **Simple 1-Click Apply**:
    * If the application completes immediately with resume on file: Record as `SUCCESS`.
-2. **Chatbot / Modal Questionnaire (NEVER SKIP ANY QUESTION)**:
+3. **Chatbot / Modal Questionnaire (NEVER SKIP ANY QUESTION)**:
    * If a modal or chatbot appears with screening questions, match questions against `candidate_profile.json`:
      * **Notice Period**: Select `Immediate` / `0 days` / `Serving Notice Period`.
      * **Total Experience**: Input `5` or `5.2`.
