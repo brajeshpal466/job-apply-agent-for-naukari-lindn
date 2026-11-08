@@ -66,7 +66,9 @@
     "workMode": ["Work from office", "Hybrid", "Remote"],
     "currentCTC": "{{YOUR_CURRENT_CTC}}",
     "expectedCTC": "{{YOUR_EXPECTED_CTC}}",
-    "faceToFaceInterview": "Yes (Available for in-person / F2F rounds in Bengaluru)"
+    "faceToFaceInterview": "Yes (Available for in-person / F2F rounds in Bengaluru)",
+    "naukriMaxBatchSelection": 5,
+    "naukriMultiApplyMaxJobsRule": "Select at most 5 jobs at a time for multi-apply"
   },
   "summary": "Software Engineer with 5+ years of experience building scalable enterprise and SaaS applications, specializing in React.js, Next.js, TypeScript, React Native, and Micro Frontend (MFE) architecture. Experienced in developing modular frontend applications, reusable UI components, and REST API integrations. Working knowledge of C#/.NET Core and Microsoft Azure infrastructure, including Azure DevOps CI/CD pipelines.",
   "skills": {
